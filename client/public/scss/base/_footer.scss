@@ -1,0 +1,503 @@
+// Demo 17 Footer
+
+// 1. Default Footer -------
+// 	  1.1) Default Footer Base
+// 	  1.2) Default Footer Elements
+//	       1.2.1) Social Icons
+// 		   1.2.2) Logo
+//		   1.2.3) About
+// 		   1.2.4) Newsletter
+//  	   1.2.5) Menu
+//		   1.2.6) Copyright
+//		   1.2.7) Payments
+//	  1.3) Scroll Top
+
+// 2. Custom Footer -------
+// 3. Responsive -------
+
+// 1. Default Footer -------
+// 1.1) Default Footer Base
+.footer {
+	width: 100%;
+	font-weight: 300;
+	font-size: 1.4rem;
+	color: #777;
+	background-color: #fff;
+
+	a {
+		color: inherit;
+	}
+
+	a:hover,
+	a:focus {
+		color: $primary-color;
+	}
+
+	.widget {
+		margin-bottom: 4rem;
+	}
+
+	.widget-title {
+		color: #333333;
+		font-weight: 500;
+		font-size: 1.6rem;
+		letter-spacing: -.01em;
+		margin-top: 0;
+		margin-bottom: 1.9rem;
+	}
+
+	.widget-list {
+		margin-bottom: 0;
+	
+		li:not(:last-child) {
+			margin-bottom: .4rem;
+		}
+	}
+}
+
+.footer-middle {
+	padding: 6.7rem 0 2.2rem;
+	border-top: .1rem solid #ebebeb;
+}
+
+.footer-bottom {
+	.container,
+	.container-fluid {
+		position: relative;
+		display: flex;
+		align-items: center;
+		align-content: center;
+		flex-direction: column;
+		padding-top: 2.1rem;
+		padding-bottom: 2.9rem;
+
+		&:before {
+			content:'';
+			display: block;
+			height: 1px;
+			position: absolute;
+			top:0;
+			left: 10px;
+			right: 10px;
+			background-color: #ebebeb;
+		}
+	}
+
+// 1.2) Default Footer Elements
+// 1.2.1) Social Icons
+	.social-icons {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 1rem;
+	}
+
+	.social-icon {
+		font-size: 1.3rem;
+	}
+}
+
+// 1.2.2) Footer Logo
+.footer-logo {
+	margin-bottom: 2rem;
+	margin-top: -.8rem;
+}
+
+// 1.2.3) Footer About
+.widget-about-title {
+	display: block;
+	font-weight: 300;
+	font-size: 1.3rem;
+	color: #333333;
+	letter-spacing: 0;
+	margin-bottom: .4rem;
+}
+
+.widget-about-info {
+	font-weight: 400;
+	font-size: 2rem;
+	letter-spacing: -.01em;
+	line-height: 1.3;
+	padding-top: .7rem;
+
+	.footer-payments {
+		margin-top: .6rem;
+	}
+}
+
+.widget-about p {
+	max-width: 250px;
+
+	.container-fluid & {
+		max-width: 540px;
+	}
+
+	&:last-of-type {
+		margin-bottom: 3.2rem;
+	}
+}
+
+.col-md-6  .widget-about p,
+.col-lg-6  .widget-about p {
+	max-width: none;
+}
+
+// 1.2.4) Footer Newsletter
+.footer-newsletter {
+	color: #ebebeb;
+	padding-top: 4.8rem;
+	padding-bottom: 5.5rem;
+
+	.heading {
+		margin-bottom: 2.4rem;
+	}
+
+	.title {
+		color: #fff;
+		font-weight: 500;
+	}
+
+	.title-desc {
+		color: inherit;
+		font-size: 1.6rem;
+		margin-top: .7rem;
+		span {
+			color: #fff;
+			font-weight: 400;
+		}
+	}
+
+	.form-control {
+		height: 46px;
+		padding: 1.25rem 2rem;
+		font-size: 1.3rem;
+		line-height: 1.5;
+		font-weight: 300;
+		color: #999999;
+		background-color: #fff;
+		border: none;
+		border-radius: 0;
+		margin-bottom: 0;
+		transition: all 0.3s;
+
+		&.form-control::placeholder {
+		color: #999999;
+		}
+	}
+
+	.btn {
+		i:last-child {
+			margin-left: 1rem;
+		}
+	}
+}
+
+.widget-newsletter {
+	form {
+		padding-top: .7rem;
+	}
+
+	.form-control {
+		height: 46px;
+		padding-top: 1.15rem;
+		padding-bottom: 1.15rem;
+		background-color: #fff;
+		border-right-width: 0;
+
+		&:not(:focus) {
+			border-color: #dadada;
+		}
+	}
+
+	.btn {
+		min-width: 46px;
+		font-size: 1.5rem;
+		padding: 1.1rem 1rem;
+
+		i {
+			margin: 0 !important;
+		}
+	}
+}
+
+// 1.2.5) Footer Menu
+.footer-menu {
+	display: flex;
+	align-items: center;
+	margin-bottom: .8rem;
+	margin-left: auto;
+	margin-right: auto;
+
+	li {
+		position: relative;
+		& + li {
+			margin-left: 2.1rem;
+			
+			&:before {
+				content: '';
+				display: inline-block;
+				width: 1px;
+				height: 1.2rem;
+				position: absolute;
+				left: -1.1rem;
+				top: 50%;
+				margin-top: -.6rem;
+				background-color: #b5b5b5;
+			}
+		}
+	}
+
+	a {
+		box-shadow: 0 1px 0 #b5b5b5;
+	}
+}
+
+// 1.2.6) Footer Copyright
+.footer-copyright {
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+// 1.2.7) Footer Payments
+.footer-payments {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+}
+
+// 1.3) Scroll Top
+#scroll-top {
+	width: 5rem;
+	height: 5rem;
+	position: fixed;
+	right: 50px;
+	bottom: 128px;
+	z-index: 11;
+	color: #999;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	line-height: 1;
+	visibility: hidden;
+	opacity: 0;
+	border-radius: 0;
+	border: none;
+	background-color: #fafafa;
+	font-size: 3rem;
+	transition: all 0.4s ease;
+	transform: translateY(60px);
+	-ms-transform: translateY(60px);
+}
+
+#scroll-top:hover,
+#scroll-top:focus {
+	color: #777;
+	background-color: #eaeaea;
+}
+
+#scroll-top.show {
+	visibility: visible;
+	opacity: 1;
+	transform: translateY(0);
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+}
+
+// 2. Custom Footer -------
+.footer-2 {
+	.footer-middle {
+		padding-top: 4.5rem;
+		padding-bottom: .4rem;
+	}
+
+	.footer-bottom .container {
+		padding-top: 2.2rem;
+		padding-bottom: 2.2rem;
+		flex-direction: column-reverse;
+	}
+}
+
+/* Footer Dark */
+.footer-dark {
+	background-color: #333333;
+
+	.footer-middle {
+		border-top-width: 0;
+	}
+
+	.widget-title {
+		color: #fff;
+	}
+
+	.social-icon {
+		&:hover,
+		&:focus {
+			color: #fff;
+		}
+	}
+
+	.footer-bottom {
+		color: #666666;
+		
+		.container:before {
+			background-color: #525455;
+		}
+	}
+
+	&.footer-2 {
+		.widget-about-info {
+			 a:not(:hover) {
+			 	color: #fff;
+			}
+		}
+		
+		.widget-about-title {
+			color: $primary-color;
+		}
+
+		.footer-bottom {
+			color: #999999;
+		}
+	}
+}
+
+.social-icon {
+	border-color: #999;
+
+	&:hover,
+	&:focus {
+	    border-color: $primary-color;
+	    background-color: transparent;
+	}
+}
+
+footer {
+	.footer-middle {
+		padding: 6.7rem 0 2.2rem;
+	}
+
+	.widget-title {
+		font-size: 1.6rem;
+		font-weight: 700;
+		font-family: 'San-serif';
+		text-transform: uppercase;
+		letter-spacing: -.01rem;
+	}
+
+	.widget-list {
+		li a {
+			font-size: 1.4rem;
+			font-weight: 400;
+			font-family: 'San-serif';
+			letter-spacing: 0;
+			color: #777;
+		}
+	}
+
+	.widget-about {
+		p {
+			font-size: 1.4rem;
+			font-weight: 400;
+			font-family: 'San-serif';
+			letter-spacing: 0;
+			color: #777;
+			max-width: none;
+		}
+	}
+
+	.footer-copyright {
+		font-size: 1.4rem;
+		font-weight: 400;
+		font-family: 'San-serif';
+		letter-spacing: 0;
+	}
+}
+
+.footer-bottom .container:before, .footer-bottom .container-fluid:before {
+    left: 1rem;
+    right: 1rem;
+}
+
+// 3. Resposive
+@include mq('md') {
+	#scroll-top {
+		display: flex;
+	}
+}
+
+@include mq('lg') {
+	.footer-bottom {
+		.container,
+		.container-fluid {
+			flex-direction: row;
+		}
+		
+		.social-icons {
+			margin-left: auto;
+			margin-right: 0;
+			margin-bottom: 0;
+		}
+	}
+
+	.footer-copyright {
+		margin-bottom: 0;
+		text-align: left;
+	}
+
+	.footer-payments {
+		margin-right: 0;
+	}
+
+	.footer-menu {
+		margin-bottom: 0;
+		margin-left: .6rem;
+		margin-right: 0;
+	}
+
+	.footer-2 {
+		.footer-bottom .container,
+		.footer-bottom .container-fluid {
+			flex-direction: row;
+		}
+	}
+}
+
+@include mq('xl') {
+	.footer-bottom {
+		.container-fluid {
+			&:before {
+				left: 30px;
+				right: 30px;
+			}
+		}
+	}
+}
+
+@include mq('xxl') {
+	.footer-bottom {
+		.container-fluid {
+			&:before {
+				left: 70px;
+				right: 70px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+	.footer {
+		.widget-about {
+			.social-icon:not(:last-child) {
+				margin-right: .4rem;
+			}
+		}
+	}
+}
+
+@include mq('sm', 'max') {
+	.widget-about-info {
+		.col-sm-6:not(:last-child) {
+			margin-bottom: 1rem;
+		}
+	}
+}

@@ -1,0 +1,11 @@
+/*api/node_modules
+/client/.next
+client/.next*/
+client/.next
+client/node_modules
+.env
+/node_modules
+
+.env.local
+.env.development
+.env.production

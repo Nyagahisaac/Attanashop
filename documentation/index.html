@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+    <title>Molla - Bootstrap eCommerce Template</title>
+
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name="description" content="Molla - Bootstrap eCommerce Template">
+    <meta name="author" content="D-templateS">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+
+    <script>
+        WebFontConfig = {
+            google: { families: [ 'Open+Sans:400,600,700', 'Poppins:400,500,600,700' ] }
+        };
+        ( function ( d ) {
+            var wf = d.createElement( 'script' ), s = d.scripts[ 0 ];
+            wf.src = 'js/webfont.js';
+            wf.async = true;
+            s.parentNode.insertBefore( wf, s );
+        } )( document );
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="vendor/line-awesome/css/line-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts-molla.min.css">
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="css/docs.min.css">
+</head>
+
+<body>
+    <div class="loading-overlay">
+        <div class="bounce-loader">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <div class="page-wrapper">
+        <header id="header" class="bg-parallax header-parallax position-relative"
+            style="background-image: url(images/doc-bg.jpg)">
+            <div class="overlay d-flex align-items-center position-absolute w-100 h-100 p-0"></div>
+            <div class="header-top d-flex align-items-center ">
+                <div class="container d-flex">
+                    <div class="header-left d-flex align-items-center">
+                        <div class="logo m-0">
+                            <a target="_blank" href="/react/molla/doc">
+                                <img src="images/docs/logo.png" alt="Molla Logo" width="104" height="23">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-right d-flex align-items-center justify-content-end">
+                        <ul class="menu">
+                            <li>
+                                <a target="_blank" href="/react/molla/"
+                                    class="go-home text-nowrap d-block p-0 pt-1 pb-1">Home</a>
+                            </li>
+                            <li>
+                                <a href="/react/molla/" class="go-support text-nowrap d-block p-0 pt-1 pb-1"
+                                    data-target=".section-support">Support</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-nowrap d-block p-0 pt-1 pb-1">Buy MOlla</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-main d-flex align-items-center pt-4 pb-6">
+                <div class="container d-flex">
+                    <div class="header-center d-lg-flex justify-content-center">
+                        <div class="banner-text text-center">
+                            <h2 class="m-title text-white">MOLLA DOCS</h2>
+                            <h3 class="m-subtitle text-white">How can we help you?</h3>
+                            <div class="search-wrapper-wide d-flex justify-content-center position-relative mt-3">
+                                <input type="text" class="form-control d-block mb-0" placeholder="Search..."
+                                    autocomplete="off">
+                                <button class="btn btn-search d-flex justify-content-center position-absolute"
+                                    type="submit">
+                                    <i class="icon-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="page-content pt-3 pb-1">
+                <div class="container">
+                    <div class="row gutter-lg main-content-wrap">
+                        <aside class="col-lg-3 sidebar sidebar-fixed shop-sidebar sidebar-toggle-remain">
+                            <div class="sidebar-overlay">
+                                <a class="sidebar-close" href="#">
+                                    <i class="close-icon"></i>
+                                </a>
+                            </div>
+                            <a href="#" class="sidebar-toggle align-items-center justify-content-center">
+                                <i class="icon-long-arrow-right"></i>
+                            </a>
+                            <div class="sidebar-content pb-1">
+                                <div class="filter-actions pt-2 pb-3">
+                                    <a href="#"
+                                        class="sidebar-toggle-btn toggle-remain btn btn-icon-left font-weight-bold">
+                                        <i class="fas fa-align-left"></i>
+                                        Documents
+                                    </a>
+                                </div>
+                                <div class="widget widget-collapsible mb-0">
+                                    <h3 class="widget-title">General</h3>
+                                    <ul class="widget-body filter-items search-ul list-arrow">
+                                        <li>
+                                            <a href="#template-welcome" data-title="General"
+                                                class="document-link d-block position-relative">Getting Started</a>
+                                        </li>
+                                        <li>
+                                            <a href="#template-features" data-title="General"
+                                                class="document-link d-block position-relative">Main Features</a>
+                                        </li>
+                                        <li>
+                                            <a href="#template-structure" data-title="General"
+                                                class="document-link d-block position-relative">Folder Structure</a>
+                                        </li>
+                                        <li>
+                                            <a href="#template-building" data-title="General"
+                                                class="document-link d-block position-relative">Start Building</a>
+                                        </li>
+                                        <li>
+                                            <a href="#template-dependencies" data-title="General"
+                                                class="document-link">Dependencies</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="widget widget-collapsible mb-0">
+                                    <h3 class="widget-title collapsed">Miscellaneous</h3>
+
+                                    <ul class="widget-body filter-items search-ul list-arrow">
+                                        <li>
+                                            <a href="#template-headers" data-title="Miscellaneous"
+                                                class="document-link d-block position-relative">Headers</a>
+                                        </li>
+                                        <li>
+                                            <a href="#template-footers" data-title="Miscellaneous"
+                                                class="document-link d-block position-relative">Footers</a>
+                                        </li>
+                                        <li>
+                                            <a href="#template-posts" data-title="Miscellaneous"
+                                                class="document-link d-block position-relative">Posts</a>
+                                        </li>
+                                        <li>
+                                            <a href="#template-instagram" data-title="Miscellaneous"
+                                                class="document-link d-block position-relative">Instagram</a>
+                                        </li>
+                                        <li>
+                                            <a href="#template-products" data-title="Miscellaneous"
+                                                class="document-link d-block position-relative">Products</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="widget widget-collapsible mb-0">
+                                    <h3 class="widget-title collapsed">Advanced</h3>
+                                    <ul class="widget-body filter-items search-ul list-arrow">
+                                        <li>
+                                            <a href="#template-customize" data-title="Advanced"
+                                                class="document-link d-block position-relative">Customize Component</a>
+                                        </li>
+                                        <li>
+                                            <a href="#template-change" data-title="Advanced"
+                                                class="document-link d-block position-relative">Change Data</a>
+                                        </li>
+                                        <li>
+                                            <a href="#template-sass" data-title="Advanced"
+                                                class="document-link d-block position-relative">Customize Sass</a>
+                                        </li>
+                                        <li>
+                                            <a href="#template-apollo" data-title="Advanced"
+                                                class="document-link d-block position-relative">Apollo</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="widget mb-0">
+                                    <h3 class="widget-title collapsed">
+                                        <a href="#template-faq" data-title="FAQs" class="document-link">
+                                            FAQs
+                                        </a>
+                                    </h3>
+                                </div>
+                                <div class="widget mb-0">
+                                    <h3 class="widget-title collapsed">
+                                        <a href="#template-thank" data-title="ThankYou" class="document-link">
+                                            Thank You
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </aside>
+
+                        <div class="col-lg-9 main-content pb-5">
+                            <script type="text/html" id="template-welcome">
+                                <h2 class="entry-title title-line" id="document-title">Getting Started</h2>
+
+                                <div class="entry-content">
+                                    <h5 class="entry-subtitle mt-2 mb-2">Welcome to Molla eCommerce React Template</h5>
+            
+                                    <div class="entry-subcontent">
+                                        It's very nice of you choosing <strong>Molla React Template</strong> for building your site.
+                                        <br><br>You will be satisfied with such a perfect Molla Template.
+                                        <br>Molla is an excellent template that is easy to understand and customize.
+                                        <br>It can be modified easily due to its robustness and flexibility.
+                                        <br><br>Our template consists of <strong>34</strong> demo pages, <strong>8</strong> product pages, <strong>14</strong> element pages and other <strong>37</strong> pages.
+                                        <br>The codes are written in a clean and well-structured way.
+                                        <br>It looks wonderful in any responsive mode and there is no doubt that you will be suprised at attractive design.
+                                        <br>HTML, CSS3 and React-Libraries are used in Molla Template building.
+                                        <br><br>We recommend that you'd better to have a look at Molla Docs first to get a common sense about the template!
+                                        <br>If you can't find any suitable answers to your queries, please don't hesitate to contact us.
+                                        <br>We will be with you whenever you want and you will feel satisfaction with our supports.
+                                        <br>Reading manual will lead you to easy work.
+                                    </div>
+                                </div>
+
+                            </script>
+
+                            <script type="text/html" id="template-features">
+                                <h2 class="entry-title" id="document-title">Main Features</h2>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Used with Next</h6>
+                                    <div class="entry-subcontent">We've built our react template using next.js, a framework making web development simple & powerful. 
+                                        Since next is recently introduced technology which has great advantages for building react app. 
+                                        Therefore, we are so sure that our Molla Template is perfect in all aspects thanks to core features of next.
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Using Apollo</h6>
+                                    <div class="entry-subcontent">Data management shouldn't have to be so difficult indeed!
+                                        Apollo is of great charm for intelligent caching and declarative approach to data fetching, and it can help you iterate faster while writing less code.<br />
+                                        1. Apollo's declarative approach uses encapsulation with <strong>useQuery</strong> Hook, which makes data fetching, all of the logic for retrieving data, tracking loading and error states, and update UI easy and convenient.<br />
+                                        2. Apollo uses it's normalized cache out of the box to fetch data faster for the same queries.<br />
+                                        3. While Apollo excels at managing remote data, Apollo client includes local state management features, that allow you to use you Apollo cache as the single source of truth the data.
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Redux Saga</h6>
+                                    <div class="entry-subcontent">Redux saga makes it possible to use <strong>effects</strong> when some specific actions are dispatched to the store. 
+                                        An <strong>effect</strong> is a plain javaScript object containing some instructions to be executed by the saga middleware. By introducing redux saga in our app, our template looks nice & wonderful in UI.
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Lazy loading</h6>
+                                    <div class="entry-subcontent">Component lazy load is strongly recommended in order to increase performance and to reduce first page rendering time. Thanks to <strong>next.js</strong>, every component in pages directory has it's own route and lazy loaded.<br />
+                                        Also image lazy loading can reduce the number of requests at initial page load.
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Amazing Performance</h6>
+                                    <div class="entry-subcontent">Our team has been struggling to get top performance as much as possible.
+                                        Such great performace will help you build attractive & fast-speed sites.
+                                        You will be amazed at high performance as you can test with lighthouse.
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Minimized Server-Client Interaction Data.</h6>
+                                    <div class="entry-subcontent">
+                                        Transfering data between client and server should be minized enough to increase performance especially in mobile device. Thanks to apollo-client module in <strong>next.js</strong>, apollo server only send necessary field of data which is need in client.
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Awesome animation</h6>
+                                    <div class="entry-subcontent">
+                                        We introduced terrific animation to make pages look very nice. Thoese kind of animation could grab interest of the customers for your site.
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Applied Hook Concept</h6>
+                                    <div class="entry-subcontent">Hooks are newly introduced concept in React 16.8. They let you use state and other React features without writing a class.
+                                        A Hook is a special function that lets you “hook into” React features. 
+                                        If you write a function component and realize you need to add some state to it, previously you had to convert it to a class. Now you can use a Hook inside the existing function component.
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Provide different types of Quickview</h6>
+                                    <div class="entry-subcontent">If you want to look at your favourite product in detail and quickly, please click Quickview button to open modal.
+                                        <br> We provide you with serveral Quickview types for images which have different ratioes of width and height.
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Intalled skeletons</h6>
+                                    <div class="entry-subcontent">In Molla-React v1.0, we used to show inner-overlay in some pages for informing changes to you.
+                                        <br>But later in v2.0, we removed them and instead of it, show skeletons between pages and changes.
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Made up using Sass</h6>
+                                    <div class="entry-subcontent">Molla eCommerce React Template is made up using sass. Every Shop demo page has its' own sass file.</div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Preventing UI blocking techonology</h6>
+                                    <div class="entry-subcontent">We accepted persist concepts to prevent UI blocking before store is ready, and turned it to reality.
+                                        <br>So you can't see any sign of UI blocking in our template at any time.
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Responsive Design</h6>
+                                    <div class="entry-subcontent">Looks great on desktops, laptops, tablets and mobiles.</div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Fully Customizable</h6>
+                                    <div class="entry-subcontent">You can fully customize. You can make your own pages and components.</div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">W3 Validator</h6>
+                                    <div class="entry-subcontent">This template was written with beautiful and clean codes! Powerful HTML files are 100% valid on W3 web standards.</div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Amazing Mega-menu</h6>
+                                    <div class="entry-subcontent">A completely different mega-menu with powerful functionality and flexible layout.</div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">demos </h6>
+                                    <div class="entry-subcontent">This template has <strong>34</strong> shop demos with different headers and footers, and other demos will be expected. These demos are of fashionable design.</div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Product Hover Variation</h6>
+                                    <div class="entry-subcontent">There are 8 different product hover variations in this template.</div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Add to Cart</h6>
+                                    <div class="entry-subcontent">When click on add to cart button, the product will be added to cart page and also displayed in header's cart menu.</div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Wishlist</h6>
+                                    <div class="entry-subcontent">Click on wishlist button, you can add to wishlist or remove from wishlist.</div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Product Compare</h6>
+                                    <div class="entry-subcontent">With a click the compare button, product will be added to compare list.</div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Product Details</h6>
+                                    <div class="entry-subcontent">Every product has individual detail pages of 8 different styles, so you can use any detail page.</div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">One Page Checkout</h6>
+                                    <div class="entry-subcontent">Click on checkout button in header cart, you could see checkout page with selected products.</div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Shop Page</h6>
+                                    <div class="entry-subcontent">We've added 14 different shop pages, and you can use any shop page. This page includes full-width, boxed slider, boxed image, left sidebar, right sidebar, flex grid, horizontal filter. Especially it has infinite scroll, list item types and having 3 to 8 columns products per pages.</div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Filter</h6>
+                                    <div class="entry-subcontent">Different types of custom filters (tag, color, size, price, brand ) are available. It's customizable,  you can customize on your demand.</div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Multi-Browser Support</h6>
+                                    <div class="entry-subcontent">It looks great in Edge, Chrome, Safari, Opera, Firefox and so on.</div>
+                                </div>
+                            </script>
+
+                            <script type="text/html" id="template-structure">
+                                <h2 class="entry-title" id="document-title">Folder Structure</h2>
+                                
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Well-organized and easily understandable structure</h6>
+                                    <div class="entry-subcontent">
+                                        Molla eCommerce React Template has well-oragnized and easily understandable folder structure.
+                                            Since we used <strong>next</strong> for our react template, we tried to follow what is in the <strong>next</strong> documentation.
+                                            Once you have it, you will be able to understand at a glance!
+                                        <br />
+                                        <div class="pt-2">
+                                            <ul class="folder-structure ml-4" style="list-style-type: disc">
+                                                <li><code>components</code></li>
+                                                <li><code>pages</code></li>
+                                                <li><code>public</code>
+                                                    <ul style="list-style-type: circle">
+                                                        <li><code>css</code></li>
+                                                        <li><code>fonts</code></li>
+                                                        <li><code>images</code></li>
+                                                        <li><code>js</code></li>
+                                                        <li><code>sass</code></li>
+                                                        <li><code>vendor</code></li>
+                                                    </ul>
+                                                </li>
+                                                <li><code>server</code>
+                                                    <ul style="list-style-type: circle">
+                                                        <li><code>apollo</code></li>
+                                                        <li><code>query</code></li>
+                                                    </ul>
+                                                </li>
+                                                <li><code>store</code></li>
+                                                <li><code>utils</code></li>
+                                                <li><code>next.config.js</code></li>
+                                                <li><code>package.json</code></li>
+                                            </ul>
+                                            
+                                            <ul class="folder-structure">
+                                                <span>The structure of components is the following.</span>
+
+                                                <ul class="ml-4" style="list-style-type: disc">
+                                                    <li><code>features</code>
+                                                        <ul style="list-style-type: circle">
+                                                            <li><code>accordion</code></li>
+                                                            <li><code>modal</code></li>
+                                                            <li><code>posts</code></li>
+                                                            <li><code>products</code></li>
+                                                            <li><code>alink</code></li>
+                                                            <li><code>count-down</code></li>
+                                                            <li><code>pagination</code></li>
+                                                            <li><code>...</code></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li><code>partials</code>
+                                                        <ul style="list-style-type: circle">
+                                                            <li><code>blog</code></li>
+                                                            <li><code>elements</code></li>
+                                                            <li><code>header</code></li>
+                                                            <li><code>footer</code></li>
+                                                            <li><code>home</code></li>
+                                                            <li><code>shop</code></li>
+                                                            <li><code>product</code></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </script>
+
+                            <script type="text/html" id="template-building">
+                                <h2 class="entry-title" id="document-title">Start Building</h2>
+                                
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Start Building</h6>
+                                    <div class="entry-subcontent">To build, you need to take these following steps.</div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Installation</h6>
+                                    <div class="entry-subcontent">Before going further, you have to install Node.JS and NPM.
+                                        <ul>
+                                            <li>
+                                                <strong>Install Node.js and NPM :</strong> You can download latest Node.js from <code>https://nodejs.org/en/download/</code> and install it on your system. NPM comes bundled with Node.js
+                                            </li>
+                                            <li>
+                                                <strong>Install npm packages :</strong> In terminal go to your project root directory and run <em>npm install command</em>, it will download all the dependencies inside of node_modules folder.  
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Running Apollo Server</h6>
+                                    <div class="entry-subcontent">
+                                        In order to get data in frontend, you should run apollo server first. In <strong>api</strong> foder, you could find server.js, which contains configuration for running api.
+                                        <ul>
+                                            <li>
+                                                Run <strong>npm start</strong> command to run dev server and access <code>http://localhost:4000/</code> to run your app/project on browser. The app will automatically reload if you change any of the source files.
+                                            </li>
+                                            <li>
+                                                As <strong>npm start</strong> runs watch command which detects any change in project files so it will automatically reload your app on browser if you make changes in files.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Running React Development server</h6>
+                                    <div class="entry-subcontent">
+                                        <ul>
+                                            <li>
+                                                Run <strong>next</strong> or <strong>npm run dev</strong> command to run dev server and access <code>http://localhost:3000/</code> to run your app/project on browser. The app will automatically reload if you change any of the source files.
+                                            </li>
+                                            <li>
+                                                As <strong>next</strong> or <strong>npm run dev</strong> runs watch command which detects any change in project files so it will automatically reload your app on browser if you make changes in files.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Production Building</h6>
+                                    <div class="entry-subcontent">
+                                        The easiest way to deploy Next.js to production is to use the <strong>Vercel platform</strong> from the creators of Next.js. Vercel is an all-in-one platform with Global CDN supporting static & Jamstack deployment and Serverless Functions.
+                                        To get more information, please refer to <a href="https://nextjs.org/docs/advanced-features/static-html-export" class="active"><strong>https://nextjs.org/docs/advanced-features/static-html-export</strong></a>.
+                                        However, you could generate html files. <br /><strong>next export</strong> allows you to export your app to static HTML, which can be run standalone without the need of a Node.js server. <strong>next export</strong> works by prerendering all pages to HTML.
+                                    </div>
+                                </div>
+                            </script>
+
+                            <script type="text/html" id="template-dependencies">
+                                <h2 class="entry-title" id="document-title">Dependencies</h2>
+
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Modules used in the project</h6>
+                                    <div class="entry-subcontent">
+                                        Modules used in Molla eCommerce React Template are listed below.<br />
+                                        </em>"@apollo/react-hooks": "^3.1.5"</em>
+                                        <br></em>"apollo-boost": "^0.4.9"</em>
+                                        <br></em>"graphql-tag": "^2.11.0"</em>
+                                        <br></em>"js-cookie": "^2.2.1"</em>
+                                        <br></em>"next": "^9.5.5"</em>
+                                        <br></em>"next-apollo": "^4.0.1"</em>
+                                        <br></em>"next-redux-wrapper": "^2.1.0"</em>
+                                        <br></em>"next-redux-saga": "^4.0.2"</em>
+                                        <br></em>"react": "^16.14.0"</em>
+                                        <br></em>"react-awesome-reveal": "^3.3.1"</em>
+                                        <br></em>"react-helmet": "^5.2.1"</em>
+                                        <br></em>"react-image-lightbox": "^5.1.1"</em>
+                                        <br></em>"react-image-magnifiers": "^1.2.1"</em>
+                                        <br></em>"react-input-range": "^1.3.0"</em>
+                                        <br></em>"react-lazy-load-image-component": "^1.5.0"</em>
+                                        <br></em>"react-modal": "^3.11.1"</em>
+                                        <br></em>"react-owl-carousel2": "^0.3.0"</em>
+                                        <br></em>"react-redux": "^7.1.0"</em>
+                                        <br></em>"react-sticky-box": "^0.7.8"</em>
+                                        <br></em>"react-countdown": "^2.2.1"</em>
+                                        <br></em>"react-tabs": "^3.1.2"</em>
+                                        <br></em>"redux": "^4.0.4"</em>
+                                        <br></em>"redux-saga": "^1.0.5"</em>
+                                        <br></em>"redux-persist": "^7.1.0"</em>
+                                        <br></em>"react-toastify": "^6.2.0"</em>
+                                        <br></em>"imagesloaded": "^4.1.4"</em>
+                                        <br></em>"masonry-layout": "^4.2.2"</em>
+                                        <br></em>"google-map-react": "^2.1.9"</em>
+                                    </div>
+                                </div>
+
+                            </script>
+
+                            <script type="text/html" id="template-headers">
+                                <h2 class="entry-title" id="document-title">Header Type</h2>
+                                <div class="entry-content">
+                                    <span class="mt-2">We have plenty number of header types, including the following.</span>
+    
+                                    <div class="entry-subcontent">
+                                        <div class="mars">
+                                            <h6 class="text-center pt-1 pb-1 mt-3 mb-1 mars-title">Header One</h6>
+                                            <img src="images/docs/miscellaneous/headers/header1.jpg" class="border-1">
+                                            <h6 class="text-center pt-1 pb-1 mt-5 mb-1 mars-title">Header Two</h6>
+                                            <img src="images/docs/miscellaneous/headers/header2.jpg" class="border-1">
+                                            <h6 class="text-center pt-1 pb-1 mt-5 mb-1 mars-title">Header Three</h6>
+                                            <img src="images/docs/miscellaneous/headers/header3.jpg" class="border-1">
+                                            <h6 class="text-center pt-1 pb-1 mt-5 mb-1 mars-title">Header Four</h6>
+                                            <img src="images/docs/miscellaneous/headers/header4.jpg" class="border-1">
+                                            <h6 class="text-center pt-1 pb-1 mt-5 mb-1 mars-title">Header Five</h6>
+                                            <img src="images/docs/miscellaneous/headers/header5.jpg" class="border-1">
+                                            <h6 class="text-center pt-1 pb-1 mt-5 mb-1 mars-title">Header Six</h6>
+                                            <img src="images/docs/miscellaneous/headers/header6.jpg" class="border-1">
+                                            <h6 class="text-center pt-1 pb-1 mt-5 mb-1 mars-title">Header Seven</h6>
+                                            <img src="images/docs/miscellaneous/headers/header7.jpg" class="border-1">
+                                            <h6 class="text-center pt-1 pb-1 mt-5 mb-1 mars-title">Header Eight</h6>
+                                            <img src="images/docs/miscellaneous/headers/header8.jpg" class="border-1">
+                                            <h6 class="text-center pt-1 pb-1 mt-5 mb-1 mars-title">Header Nine</h6>
+                                            <img src="images/docs/miscellaneous/headers/header9.jpg" class="border-1">
+                                            <h6 class="text-center pt-1 pb-1 mt-5 mb-1 mars-title">Header Ten</h6>
+                                            <img src="images/docs/miscellaneous/headers/header10.jpg" class="border-1">
+                                            <h6 class="text-center pt-1 pb-1 mt-5 mb-1 mars-title">Header Eleven</h6>
+                                            <img src="images/docs/miscellaneous/headers/header11.jpg" class="border-1">
+                                            <h6 class="text-center pt-1 pb-1 mt-5 mb-1 mars-title">Header Twelve</h6>
+                                            <img src="images/docs/miscellaneous/headers/header12.jpg" class="border-1">
+                                        </div>
+                                    </div>
+                                </div>
+                            </script>
+
+                            <script type="text/html" id="template-footers">
+                                <h2 class="entry-title" id="document-title">Footer Type</h2>
+                                <div class="entry-content">
+                                    <span class="mt-2">We support you with powerful footer types which look nice.</span>
+    
+                                    <div class="entry-subcontent">
+                                        <div class="mars">
+                                            <h6 class="text-center pt-1 pb-1 mt-2 mb-1 mars-title">Footer One</h6>
+                                            <img src="images/docs/miscellaneous/footers/footer1.jpg" class="border-1">
+                                            <h6 class="text-center pt-1 pb-1 mt-5 mb-1 mars-title">Footer Two</h6>
+                                            <img src="images/docs/miscellaneous/footers/footer2.jpg" class="border-1">
+                                            <h6 class="text-center pt-1 pb-1 mt-5 mb-1 mars-title">Footer Three</h6>
+                                            <img src="images/docs/miscellaneous/footers/footer3.jpg" class="border-1">
+                                            <h6 class="text-center pt-1 pb-1 mt-5 mb-1 mars-title">Footer Four</h6>
+                                            <img src="images/docs/miscellaneous/footers/footer4.jpg" class="border-1">
+                                            <h6 class="text-center pt-1 pb-1 mt-5 mb-1 mars-title">Footer Five</h6>
+                                            <img src="images/docs/miscellaneous/footers/footer5.jpg" class="border-1">
+                                            <h6 class="text-center pt-1 pb-1 mt-5 mb-1 mars-title">Footer Six</h6>
+                                            <img src="images/docs/miscellaneous/footers/footer6.jpg" class="border-1">
+                                            <h6 class="text-center pt-1 pb-1 mt-5 mb-1 mars-title">Footer Seven</h6>
+                                            <img src="images/docs/miscellaneous/footers/footer7.jpg" class="border-1">
+                                        </div>
+                                    </div>
+                                </div>
+                            </script>
+
+                            <script type="text/html" id="template-posts">
+                                <h2 class="entry-title" id="document-title">Post Type</h2>
+                                <div class="entry-content">
+                                    <span class="mt-2">Lots of posts will make you happy.</span>
+    
+                                    <div class="entry-subcontent">
+                                        <div class="mars">
+                                            <h6 class="text-center pt-1 pb-1 mt-2 mars-title">Post One</h6>
+                                            <img src="images/docs/miscellaneous/posts/post1.jpg">
+                                            <h6 class="text-center pt-1 pb-1 mt-5  mars-title mb-1">Post Two</h6>
+                                            <img src="images/docs/miscellaneous/posts/post2.jpg">
+                                            <h6 class="text-center pt-1 pb-1 mt-5  mars-title mb-1">Post Three</h6>
+                                            <img src="images/docs/miscellaneous/posts/post3.jpg">
+                                            <h6 class="text-center pt-1 pb-1 mt-5  mars-title mb-1">Post Four</h6>
+                                            <img src="images/docs/miscellaneous/posts/post4.jpg">
+                                            <h6 class="text-center pt-1 pb-1 mt-5  mars-title mb-1">Post Five</h6>
+                                            <img src="images/docs/miscellaneous/posts/post5.jpg">
+                                            <h6 class="text-center pt-1 pb-1 mt-5  mars-title mb-1">Post Six</h6>
+                                            <img src="images/docs/miscellaneous/posts/post6.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </script>
+
+                            <script type="text/html" id="template-instagram">
+                                <h2 class="entry-title" id="document-title">Instagram Types</h2>
+                                <div class="entry-content">
+                                    <span class="mt-2">There are five typical instagrams here, you can select whatever you like.</span>
+    
+                                    <div class="entry-subcontent">
+                                        <div class="mars">
+                                            <h6 class="text-center pt-1 pb-1 mt-2 mb-3 mars-title">Instagram One</h6>
+                                            <img src="images/docs/miscellaneous/instagram/instagram1.jpg">
+                                            <h6 class="text-center pt-1 pb-1 mt-5 mb-3 mars-title">Instagram Two</h6>
+                                            <img src="images/docs/miscellaneous/instagram/instagram2.jpg">
+                                            <h6 class="text-center pt-1 pb-1 mt-5 mb-3 mars-title">Instagram Three</h6>
+                                            <img src="images/docs/miscellaneous/instagram/instagram3.jpg">
+                                            <h6 class="text-center pt-1 pb-1 mt-5 mb-3 mars-title">Instagram Four</h6>
+                                            <img src="images/docs/miscellaneous/instagram/instagram4.jpg">
+                                            <h6 class="text-center pt-1 pb-1 mt-5 mb-3 mars-title">Instagram Five</h6>
+                                            <img src="images/docs/miscellaneous/instagram/instagram5.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </script>
+
+                            <script type="text/html" id="template-products">
+                                <h2 class="entry-title" id="document-title">Product Type</h2>
+                                <div class="entry-content">
+                                    <span class="mt-2">We have 8 basic products and a specific product for each demo. You can see our basic products here.</span>
+    
+                                    <div class="entry-subcontent">
+                                        <div class="mars">
+                                            <h6 class="text-center pt-1 pb-1 mt-5 mb-1 mars-title">Product One</h6>
+                                            <img src="images/docs/miscellaneous/products/product1.jpg">
+                                            <h6 class="text-center pt-1 pb-1 mt-5 mb-1 mars-title">Product Two</h6>
+                                            <img src="images/docs/miscellaneous/products/product2.jpg">
+                                            <h6 class="text-center pt-1 pb-1 mt-5 mb-1 mars-title">Product Three</h6>
+                                            <img src="images/docs/miscellaneous/products/product3.jpg">
+                                            <h6 class="text-center pt-1 pb-1 mt-5 mb-1 mars-title">Product Four</h6>
+                                            <img src="images/docs/miscellaneous/products/product4.jpg">
+                                            <h6 class="text-center pt-1 pb-1 mt-5 mb-1 mars-title">Product Five</h6>
+                                            <img src="images/docs/miscellaneous/products/product5.jpg">
+                                            <h6 class="text-center pt-1 pb-1 mt-5 mb-1 mars-title">Product Six</h6>
+                                            <img src="images/docs/miscellaneous/products/product6.jpg">
+                                            <h6 class="text-center pt-1 pb-1 mt-5 mb-1 mars-title">Product Seven</h6>
+                                            <img src="images/docs/miscellaneous/products/product7.jpg">
+                                            <h6 class="text-center pt-1 pb-1 mt-5 mb-1 mars-title">Product Eight</h6>
+                                            <img src="images/docs/miscellaneous/products/product8.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </script>
+
+                            <script type="text/html" id="template-customize">
+                                <h2 class="entry-title" id="document-title">Customize Component</h2>
+                                
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Customize Product</h6>
+                                    
+                                    <div class="entry-subcontent">
+                                        <div class="custom">
+                                            <p>We have 11 base product types and a specific demo product.</p>
+                                            <p>If you don't like your product in current page then change it with others.</p>
+                                            <p>Our products are in <code>components/features/products</code> directory, so you can change <code>product</code> so easily.</p>
+                                            <p>Once you get using of it, it will be common sense. Every product type has same logic to customize it, <code>adClass</code>, <code>type</code> etc. Therefore, you can just insert any props which helps you change your own product.</p>
+                                            <p>Here is an example. </p>
+                                            <code>import Product from '~/components/features/product/product-three';<br><br></code>
+                                            <img src="images/docs/custom/product/1.jpg">
+                                            <br><br>
+                                            If you want to add countdown to deal product, please add following code in product component
+    <pre><code>
+        {
+            product.until && product.until !== null ?
+                &ltdiv className="product-countdown is-countdown">
+                    &ltCountdown date={ product.until } renderer={ rendererOne } />
+                &lt/div>
+                :
+                ''
+        }
+    </code></pre>
+    <br />
+    If you want to remove circle style for the product label, please remove "label-circle" class from label class.
+    <pre><code>
+        {
+            product.new ?
+                &ltspan className="product-label label-new">New&lt/span>
+                : ""
+        }
+
+        {
+            product.sale_price ?
+                &ltspan className="product-label label-sale">Sale&lt/span>
+                : ""
+        }
+
+        {
+            product.top ?
+                &ltspan className="product-label label-top">Top&lt/span>
+                : ""
+        }
+
+        {
+            !product.stock || product.stock == 0 ?
+                &ltspan className="product-label label-out">Out of Stock&lt/span>
+                : ""
+        }
+    </code></pre><br />
+    If you don't like product dots, please remove following part from the variation product.
+    <pre><code>
+        {
+            product.variants.length > 0 ?
+                &ltdiv className="product-nav product-nav-dots">
+                    &ltdiv className="row no-gutters">
+                        {
+                            product.variants.map( ( item, index ) => (
+                                &ltALink href="#" style={ { backgroundColor: item.color } } key={ index }>
+                                &ltspan className="sr-only">Color Name&lt/span>&lt/ALink>
+                            ) )
+                        }
+                    &lt/div>
+                &lt/div>
+                : ""
+        }
+    </code></pre>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Customize The Other Components</h6>
+                                    <div class="entry-subcontent">
+                                        <div class="custom">
+                                            <p>Customizing all the other components are so easy to use once you mastered above components. <br>It is the same case with customizing product. <br>Therefore you can just insert any props that helps you change your component.</p>
+                                            <code>import Post from '~/components/features/post/post-two';</code>
+                                            <br><br>
+                                            <img src="images/docs/custom/com/blg-demo13.jpg">
+                                            <br><br><br>
+                                            <code>import Post from '~/components/features/post/post-one';</code>
+                                            <br><br>
+                                            <img src="images/docs/custom/com/blg-demo17.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </script>
+
+                            <script type="text/html" id="template-change">
+                                <h2 class="entry-title" id="document-title">Change Data</h2>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Change Product Data</h6>
+                                    <div class="entry-subcontent">
+                                        Since we used apollo server, you can find product data in api/src folder. 
+                                        Here, all data which is needed in frontend are defined. You can customize each product or post data.<br />
+                                        Let's take one product as an example.
+                                        <code><pre>
+        {
+            "id": 107,
+            "name": "2-Seater",
+            "slug": "2-seater",
+            "short_desc": "Sed egestas, ante et vulputate volutpat, eros pede semper est",
+            "price": 248,
+            "sale_price": null,
+            "review": 2,
+            "ratings": 5,
+            "until": null,
+            "stock": 0,
+            "top": null,
+            "featured": true,
+            "new": null,
+            "author": null,
+            "sold": null,
+            "category": [
+                {
+                    "name": "Furniture",
+                    "slug": "furniture"
+                }
+            ],
+            "brands": [
+            ],
+            "pictures": [
+                {
+                    "width": "800",
+                    "height": "800",
+                    "url": "/uploads/product_1_1_e4d26c1a1a.jpg"
+                },
+                {
+                    "width": "800",
+                    "height": "800",
+                    "url": "/uploads/product_1_2_a7c10bc1b6.jpg"
+                }
+            ],
+            "sm_pictures": [
+                {
+                    "width": "300",
+                    "height": "300",
+                    "url": "/uploads/product_1_1_300x300_ec128f72cf.jpg"
+                },
+                {
+                    "width": "300",
+                    "height": "300",
+                    "url": "/uploads/product_1_2_300x300_d265cc4cd6.jpg"
+                }
+            ],
+            "variants": []
+        }
+                                        </pre></code>
+
+                                        If you want to make this product into featured one, please rewrite "featured: true".<br />
+                                        Also, you can add variants to the single product.
+                                        <code><pre>
+            "variants": [
+                {
+                    "id": 15,
+                    "color": "#669933",
+                    "color_name": "Green",
+                    "price": 210,
+                    "size": [
+                        {
+                            "id": 41,
+                            "name": "Medium",
+                            "slug": null
+                        },
+                        {
+                            "id": 42,
+                            "name": "Large",
+                            "slug": null
+                        }
+                    ]
+                },
+                {
+                    "id": 16,
+                    "color": "#cc3333",
+                    "color_name": "Red",
+                    "price": 240,
+                    "size": [
+                        {
+                            "id": 43,
+                            "name": "Large",
+                            "slug": null
+                        },
+                        {
+                            "id": 40,
+                            "name": "Extra Large",
+                            "slug": null
+                        }
+                    ]
+                }
+            ]
+                                        </pre></code>
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Change Post Data</h6>
+                                    <div class="entry-subcontent">
+                                        You could possible change post data as well. In api/data folder, you could find blog.json file.<br />
+                                        Change post data is so easy as product. Please enjoy it.
+                                    </div>
+                                </div>
+                            </script>
+                            <script type="text/html" id="template-sass">
+                                <h2 class="entry-title" id="document-title">Customize Sass</h2>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Change Skin color</h6>
+                                    <div class="entry-subcontent">
+                                        Since molla react template has well-organized sass structure, you will be able to easily change skin color of the page.<br />
+                                        You can change sass variables in <code>public/sass/config/_variables.scss</code> file.<br />
+                                        <code>
+                                            <pre>
+    $font-size: 1.4rem !default;
+    $sidebar-font-size: 1.4rem !default;
+    $footer-font-size: 1.3rem !default;
+    $input-font-size: 1.4rem !default;
+    $button-font-size: 1.4rem !default;
+
+    $primary-color: #a6c76c  !default;
+    $primary-color-dark: #006699 !default;
+
+    $secondary-color: #92b25a !default;
+    $secondary-color-dark: #2f3946 !default;
+    $link-color: $primary-color !default;
+
+    $lazy-image-background: #ebebeb;
+
+    $border-radius: 0 !default;
+
+    $body-text: #666666 !default;
+    $light-text: #999999 !default;
+    $dark-text: #333333 !default;
+    $headings-text: $dark-text !default;
+
+    $font-family: 'Poppins', sans-serif !default;
+    $second-font-family: 'Poppins', sans-serif !default;
+                                            </pre>
+                                        </code>
+                                        Here, for instance, you can set <strong>primary color</strong> of this page to <span style="color: #445f84;">#445f84</span> by simply change like below.
+                                        <code><pre>
+    $primary-color: #445f84 !default;
+                                        </pre></code>
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Change Other Style.</h6>
+                                    <div class="entry-subcontent">
+                                        You could change other styles for all pages including home page. In <code>scss/_custom.scss</code>, you can do whatever you like to change.<br />
+                                        <code>_custom.scss</code> includes all styles for home page, therefore, please make sure you only change this file for more beautiful style.
+                                    </div>
+                                </div>
+                            </script>
+                            <script type="text/html" id="template-apollo">
+                                <h2 class="entry-title" id="document-title">Apollo</h2>
+                                                                
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Define schema & resolver in apollo server</h6>
+                                    <div class="entry-subcontent">
+                                        In order to use apollo server, you should define schema, which contains patterns of queries and responses.<br />
+                                        You can find this in schema.js in api/src folder.
+                                        <code><pre>
+            const typeDefs = gql`
+                type Product {
+                    id: Int!
+                    name: String
+                    slug: ID
+                    short_desc: String
+                    price: Float
+                    sale_price: Float
+                    review: Int
+                    ratings: Float
+                    until: String
+                    stock: Int
+                    top: Boolean
+                    featured: Boolean
+                    new: Boolean
+                    author: String
+                    sold: Int
+                    category: [Category]
+                    brands: [Brand]
+                    pictures: [Media]
+                    sm_pictures: [Media]
+                    variants: [Variant]
+                }
+
+                ... 
+
+                type Query {
+                    elementProducts: [Product]
+                    elementPosts: [Post]
+                    homeData(demo: Int): homeResponse
+                    products(demo: Int!, searchTerm: String, color: [String] = [], size: [String] = [], 
+                            brand: [String] = [], minPrice: Int = 0, maxPrice: Int = 10000, category: String, rating: [String], 
+                            sortBy: String, page: Int = 1, perPage: Int = 10, list: Boolean, from: Int = 0 ): ShopResponse,
+                    product(demo: Int!, slug: String!, onlyData: Boolean): ProductSingle
+                    postsByPage(page: String, category: String): BlogPageResponse
+                    post(slug: String!): PostSingle
+                }
+            }`
+                                        </pre></code>
+                                        As you can see above, in order to make special query and response, you should register that "pattern" in schema.js file.
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Customize apollo client</h6>
+                                    <div class="entry-subcontent">
+                                        Thanks to apollo client we've used, you can get the benifts such as intelligent caching and declarative approach to data fetching.<br />
+                                        You can find every query in server/quieres.js file.<br />
+                                        <code><pre>
+            export const GET_POST = gql`
+                query post($slug: String!) {
+                    post(slug: $slug) {
+                        id
+                        author
+                        comments
+                        content
+                        date
+                        slug
+                        title
+                        type
+                        blog_categories {
+                            name
+                            slug
+                        }
+                        image {
+                            width
+                            height
+                            url
+                        }
+                    }
+                }
+            `
+                                        </pre></code>
+                                        Apollo client uses this reponse type to filter reponse from the server, which means you can get minimized data from the server.<br />
+                                        You can eliminate unnecessary data because apollo client and server coordinate each other to send only essential data.
+                                    </div>
+                                </div>
+                            </script>
+
+                            <script type="text/html" id="template-faq">
+                                <h2 class="entry-title" id="document-title">FAQs</h2>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">How can I find route for page component?</h6>
+                                    <div class="entry-subcontent">
+                                        Well, that is very easy. All components in <strong>pages</strong> directory has it's own individual route and are lazy loaded. Please make sure that file name are the route for that component.
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Why is apollo-client used?</h6>
+                                    <div class="entry-subcontent">
+                                        Data management shouldn't have to be so difficult indeed!
+                                        Apollo is of great charm for intelligent caching and declarative approach to data fetching, and it can help you iterate faster while writing less code.
+                                    </div>
+                                </div>
+
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">How can configure server url?</h6>
+                                    <div class="entry-subcontent">
+                                        In every demo, there are 3 configuration files, one for development, one for production and one for both. You can change some options like server url in those files.
+                                    </div>
+                                </div>
+
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Exported html does not show.</h6>
+                                    <div class="entry-subcontent">
+                                        You could get static html by using static file generation. In this case, please make sure you have <strong>.htaccess</strong> file in build folder. <strong>.htaccess</strong> file have function of redirecting some urls and caching static files as well.
+                                    </div>
+                                </div>
+
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">How does this project support absolute file import?</h6>
+                                    <div class="entry-subcontent">
+                                        Absolute file import is prefered way of importing component compared to relative one. In <strong>jsconfig.json</strong> file, you can see compiler options.
+                                    </div>
+                                </div>
+
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">What is queries for?</h6>
+                                    <div class="entry-subcontent">
+                                        In order to use apollo server & client, you should queries for all requests. Simply queries are "patterns" of server request.
+                                    </div>
+                                </div>
+                                                                
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Which script did you use?</h6>
+                                    <div class="entry-subcontent">
+                                        We know that you'll be much curious about which script our template is based in.
+                                        Our template is completely based on Typescript.
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">What is persist concept? Is it really helpful?</h6>
+                                    <div class="entry-subcontent">
+                                        Actually, persist is a powerful way to prevent UI blocking before store is ready.
+                                        We receive products and other useful information from store.
+                                        If the UI rendering process before store isn't ready, users must be depressed, because of blocked UI.
+                                        To solve this problem, we introduced persist concept.
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">What is the purpose to use hook?</h6>
+                                    <div class="entry-subcontent">
+                                        It's hardly news that replacing class component with functional component is a trend.
+                                        Because functional component has some advantages than class component.
+                                        So now developers use functional components rather than class component.
+                                        But functional component hasn't any lifecycles or setState that are must be used in React developing.
+                                        Hook supports lifecycles and other same effects that class component use to functional component.
+                                        It's the main reason why we used hook. 
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">What is the main factor that improved performance?</h6>
+                                    <div class="entry-subcontent">
+                                        In this developing, we were focused on minimizing first rendering time.
+                                        For this, we used some new methods and libraries.
+                                        The key to minimize first rendering time is to reduce the time between DCL(dom conent load) and onLoad.
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Did you use redux-thunk or redux-saga?</h6>
+                                    <div class="entry-subcontent">
+                                        We used redux-saga since it has effects when actions are dispatched to the store.
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">What is layout component for?</h6>
+                                    <div class="entry-subcontent">
+                                        Layout component is so useful when all page component have same component in common.<br>Here, we have init settings and some filters in common. So, we don't need to import and use those components in page component.
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Can I use this template for eCommerce?</h6>
+                                    <div class="entry-subcontent">
+                                        For sure. It is basically designed to support eCommerce.
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">How many shop demos are here?</h6>
+                                    <div class="entry-subcontent">
+                                        <strong>34</strong> shop demos
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Where can I add css?</h6>
+                                    <div class="entry-subcontent">
+                                        In every page component, you can find scss file in same directory. You could add your own css in that scss file.
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Is it possible to use jQuery in this template?</h6>
+                                    <div class="entry-subcontent">
+                                        Of course, there is no doubt that you can use jQuery in here.
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">How does this template import css?</h6>
+                                    <div class="entry-subcontent">Every page component has style.scss file in the same folder. In page component, it imports that scss file, and scss file imports css file in public/assets/css directory.
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Can I use many sliders in one page?</h6>
+                                    <div class="entry-subcontent">Definetely. Molla React eCommerce template allows you to use many sliders by assigning auto-generated unique id to each slider when slider component is mounted.
+                                    </div>
+                                </div>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">Does this project have multi-brower support?</h6>
+                                    <div class="entry-subcontent">Sure, it deoes. It works perfectly in all browers including Chrome, Firefox, Edge, Opera and so on
+                                        
+                                    </div>
+                                </div>
+                            </script>
+
+                            <script type="text/html" id="template-thank">
+                                <h2 class="entry-title" id="document-title">Thank You</h2>
+                                <div class="entry-content">
+                                    <h6 class="entry-subtitle">
+                                    </h6>
+                                    <div class="entry-subcontent">
+                                        <div class="comment">
+                                            We don't know how to thank you enough for using our Templates.<br>If you like, please rate us.<br>React Team, Molla
+                                        </div>
+                                    </div>
+                                </div>
+                            </script>
+
+                            <div class="document-content" id="document-view">
+                                <h2 class="entry-title title-line" id="document-title">Getting Started</h2>
+
+                                <h5 class="entry-subtitle mt-2 mb-2">Welcome to Molla eCommerce React Template</h5>
+
+                                <div class="entry-subcontent">
+                                    We are so glad you have chosen Molla template to build your site.
+                                    <br>
+                                    <br>You will never be disappointed.
+                                    <br>Molla is such a good template that is easy to understand and customize.
+                                    <br>It has robustness and flexibility so that can be modified with no difficulties.
+                                    <br>
+                                    <br>Our template consists of <strong>34</strong> demo pages, 8 product pages, 14
+                                    element pages and
+                                    other 37
+                                    pages.
+                                    <br>The codes are written in a clean and well-structured way.
+                                    <br>It looks wonderful in any responsive modes and it is no doubt that you will be
+                                    suprised
+                                    at attractive design.
+                                    <br>We've built template with HTML, SCSS and React-Libraries.
+                                    <br>
+                                    <br>We recommend that you may have a look at Molla Docs first to get a common sense
+                                    about
+                                    the template!
+                                    <br>If you can't find any suitable answers to your queries, please don't hesitate to
+                                    contact
+                                    us.
+                                    <br>We will be always with you and you will be satisfied with our supports.
+                                    <br>Reading manual will make your work so easy.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section
+                class="section section-light section-ready text-center bg-parallax position-relative text-center pt-8 pb-8"
+                style="background-image: url(&quot;images/bg-large.jpg&quot;);">
+                <div class="black-back position-absolute w-100 h-100"></div>
+                <h2 class="mb-3 text-white px-3">Molla Is Ready To Use. Get It Now!</h2>
+                <p class="px-3">DON'T FORGET TO APPRECIATE OUR WORK. RATE US NOW!</p>
+                <div class="star-rating mb-2 pb-1">
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                    <i class="icon-star"></i>
+                </div>
+                <a class="btn btn-primary btn-outline text-white text-uppercase" href="#">
+                    <i class="icon-shopping-cart ml-0"></i>Buy Molla
+                </a>
+            </section>
+        </main>
+        <!-- End Main -->
+
+        <footer id="footer" class="container-lg d-flex flex-column flex-lg-row">
+            <div class="footer-left text-center text-lg-left mb-2 mb-lg-0">
+                <div class="copyright d-flex align-items-center flex-lg-row flex-column ">
+                    <p class="mb-0">
+                        Copyright © 2020 Molla Store. All Rights Reserved.
+                    </p>
+                    <div class="ml-0 ml-lg-2">
+                        <a href="/react/molla/doc">Terms Of Use</a> |
+                        <a href="/react/molla/doc">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right ml-lg-auto text-center text-lg-right social-icons d-block align-items-center">
+                <label class="mr-3 font-weight-light">Social Media</label>
+                <a title="Facebook" href="/react/molla/doc">
+                    <i class="icon-facebook-f"></i>
+                </a>
+                <a title="Twitter" href="/react/molla/doc">
+                    <i class="icon-twitter"></i>
+                </a>
+                <a title="Instagram" href="/react/molla/doc">
+                    <i class="icon-instagram"></i>
+                </a>
+                <a title="Youtube" href="/react/molla/doc">
+                    <i class="icon-youtube"></i>
+                </a>
+                <a title="Pinterest" href="/react/molla/doc">
+                    <i class="icon-pinterest"></i>
+                </a>
+            </div>
+        </footer>
+        <!-- End Footer -->
+    </div>
+    <!-- Scroll Top -->
+    <a id="scroll-top" href="#top" title="Top" role="button" class="scroll-top">
+        <i class="la la-angle-up"></i>
+    </a>
+
+    <!-- Plugins JS File -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Main JS File -->
+    <script src="js/docs.js"></script>
+</body>
+
+</html>
